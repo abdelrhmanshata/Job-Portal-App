@@ -70,6 +70,7 @@ To get a local copy up and running, follow these steps:
 
 ## Usage
 - Once the application is up and running, you can interact with it using the following endpoints:
+- The application should now be running on http://localhost:3000.
 
 ## API Endpoints
 - Authentication
