@@ -69,9 +69,36 @@ To get a local copy up and running, follow these steps:
    JWT_SECRET=your_jwt_secret
    ```
 
-4. **Run the application:**
-   
-   ```bash
-   npm start or npm run server
-   ```
+## Usage
+- Once the application is up and running, you can interact with it using the following endpoints:
+
+## Usage
+- Once the application is up and running, you can interact with it using the following endpoints:
+
+API Endpoints
+Authentication
+POST /api/auth/register - Register a new user (job seeker or employer).
+POST /api/auth/login - Log in a user and receive a JWT.
+Job Postings
+GET /api/jobs - Get a list of all job postings.
+POST /api/jobs - Create a new job posting (employer only).
+GET /api/jobs/
+- Get details of a specific job posting.
+PUT /api/jobs/
+- Update an existing job posting (employer only).
+DELETE /api/jobs/
+- Delete a job posting (employer only).
+User Dashboard
+GET /api/dashboard - Get user-specific data (e.g., jobs posted by employer, jobs applied to by job seeker).
+Search & Filter
+GET /api/jobs/search?query= - Search for jobs based on keywords.
+GET /api/jobs/filter?location= - Filter jobs by location.
+Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+Fork the Project.
+Create your Feature Branch (git checkout -b feature/AmazingFeature).
+Commit your Changes (git commit -m 'Add some AmazingFeature').
+Push to the Branch (git push origin feature/AmazingFeature).
+Open a Pull Request.
    
