@@ -71,13 +71,9 @@ To get a local copy up and running, follow these steps:
 
 ## Usage
 - Once the application is up and running, you can interact with it using the following endpoints:
-
-## Usage
-- Once the application is up and running, you can interact with it using the following endpoints:
-
-API Endpoints
-Authentication
-POST /api/auth/register - Register a new user (job seeker or employer).
+- **API Endpoints:**
+- Authentication
+  - POST /api/auth/register - Register a new user (job seeker or employer).
 POST /api/auth/login - Log in a user and receive a JWT.
 Job Postings
 GET /api/jobs - Get a list of all job postings.
