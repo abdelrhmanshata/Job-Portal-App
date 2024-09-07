@@ -61,7 +61,6 @@ To get a local copy up and running, follow these steps:
 
    ```bash
    PORT= 3000
-   DEV_MODE=development
    MONGO_URL=your_mongodb_uri
    DATABASE_LOCAL=your_mongodb_local_uri
    DATABASE_PASSWORD=your_mongodb_password
