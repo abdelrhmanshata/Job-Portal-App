@@ -70,8 +70,8 @@ To get a local copy up and running, follow these steps:
 
 ## Usage
 - Once the application is up and running, you can interact with it using the following endpoints:
-- **API Endpoints:**
 
+## API Endpoints
 - Authentication
   - POST /api/v1/auth/register   - Register a new user (job seeker or employer).
   - POST /api/v1/auth/login      - Log-in a user and receive a JWT.
