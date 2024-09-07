@@ -36,7 +36,8 @@ Welcome to the **Node.js Job Portal Project**! This project showcases a fully fu
 - **MongoDB** - NoSQL database for storing application data.
 - **Mongoose** - ODM (Object Data Modeling) library for MongoDB and Node.js.
 - **JWT (JSON Web Tokens)** - For secure authentication.
-
+- **Swagger** - API documentation tool.
+  
 ## Installation
 
 To get a local copy up and running, follow these steps:
@@ -72,23 +73,29 @@ To get a local copy up and running, follow these steps:
 ## Usage
 - Once the application is up and running, you can interact with it using the following endpoints:
 - **API Endpoints:**
+
 - Authentication
-  - POST /api/auth/register - Register a new user (job seeker or employer).
-POST /api/auth/login - Log in a user and receive a JWT.
-Job Postings
-GET /api/jobs - Get a list of all job postings.
-POST /api/jobs - Create a new job posting (employer only).
-GET /api/jobs/
-- Get details of a specific job posting.
-PUT /api/jobs/
+  - POST /api/v1/auth/register   - Register a new user (job seeker or employer).
+  - POST /api/v1/auth/login      - Log-in a user and receive a JWT.
+
+- Job Postings
+  - GET /api/v1/job/get-job      - Get a list of all job postings.
+  - POST /api/v1/job/create-job  - Create a new job posting (employer only).
+
 - Update an existing job posting (employer only).
-DELETE /api/jobs/
+  - PATCH /api/v1/job/update-job/:id
+
 - Delete a job posting (employer only).
-User Dashboard
-GET /api/dashboard - Get user-specific data (e.g., jobs posted by employer, jobs applied to by job seeker).
-Search & Filter
-GET /api/jobs/search?query= - Search for jobs based on keywords.
-GET /api/jobs/filter?location= - Filter jobs by location.
+  - DELETE /api/v1/job/delete-job/:id
+
+- Search & Filter & Sort & Pagination 
+  - GET /api/v1/job/get-job?search= [positionName]                                          - Search for jobs based on keywords.
+  - GET /api/v1/job/get-job?workType=["full-time", "part-time", "internship", "contaract"]  - Filter jobs by workType.
+  - GET /api/v1/job/get-job?status=["pending", "reject", "interview"]                       - Filter jobs by status.
+  - GET /api/v1/job/get-job?sort=["latest","oldest","a-z","z-a"]                            - Filter jobs by sort.
+  - GET /api/v1/job/get-job?page=1&limit=10                                                 - Pagination jobs .
+  
+  
 Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
