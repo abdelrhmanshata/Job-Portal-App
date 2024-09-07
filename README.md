@@ -1,7 +1,5 @@
 # Job-Portal-App
 
- # Job Portal App
-
 Welcome to the **Node.js Job Portal Project**! This project showcases a fully functional job portal web application built using Node.js, Express.js, and MongoDB. Whether you're a developer looking to learn more about Node.js and web application development, or you're simply interested in how a job portal operates, this project will provide valuable insights.
 
 ## Table of Contents
